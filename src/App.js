@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Aya from "./tsawer/aya1.jpg";
+import Component from "./profile/Component";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Component
+        name="Aya Benaissa "
+        diplome="bachelor's degree in Science  "
+        profession="full stack developer"
+      >
+        <img
+          src={Aya}
+          alt="this is my face"
+          style={{
+            margin: "0 auto",
+            display: "block",
+            height: "300px",
+            borderRadius: "60%",
+          }}
+        />
+      </Component>
     </div>
   );
 }
